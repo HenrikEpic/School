@@ -1,0 +1,50 @@
+VG2 IT – PROGRAMMERINGSREPETISJON
+Oppgave 6: For-løkker og gjentakelse
+====================================================================
+
+Elev: Henrik
+Klasse: 2ITA
+Eksportert: 25. august 2026 kl. 09:47
+Programmeringsspråk: Python
+
+OPPGAVEN
+--------------------------------------------------------------------
+Mål: Repeter syntaksen for å gjenta kode et kjent antall ganger eller gå gjennom en tallrekke.
+Syntaksfokus: for-løkke · teller / tallrekke · løkkevariabel · kodeblokk
+
+Lag et program som skriver tallene fra 1 til 10. Deretter skal programmet skrive bare partallene i samme område.
+
+Til slutt skal brukeren skrive inn et tall, og programmet skal bruke en for-løkke til å skrive gangetabellen for dette tallet fra 1 til 10.
+
+Krav og testing:
+- Bruk minst én for-løkke.
+- Vis at du forstår hvilken verdi løkkevariabelen har underveis.
+- Test gangetabellen med minst to forskjellige tall.
+
+MIN LØSNING
+--------------------------------------------------------------------
+#1 - 10
+for i in range(10):
+    i = i + 1
+    print(i)
+
+#Partall
+for i in range(10):
+    i = i + 1
+    if i % 2 == 0:
+        print(i)
+
+#Gange fra 1-10
+x = int(input("Skriv din tall som skal ganges fra 1 til 10: "))
+
+for i in range(10):
+    i = i + 1
+    print(x * i)
+
+TESTING
+--------------------------------------------------------------------
+Jeg testet tallet 5 og 10 på den siste programmet for å se om det ganget riktig.
+
+FORKLARING
+--------------------------------------------------------------------
+i er en variabel som kan erstattes når som helst trenger ikke å være for i in range hele tiden.

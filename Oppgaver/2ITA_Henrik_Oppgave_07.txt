@@ -1,0 +1,55 @@
+VG2 IT – PROGRAMMERINGSREPETISJON
+Oppgave 7: While-løkker og stoppvilkår
+====================================================================
+
+Elev: Henrik
+Klasse: 2ITA
+Eksportert: 26. august 2026 kl. 14:26
+Programmeringsspråk: Python
+
+OPPGAVEN
+--------------------------------------------------------------------
+Mål: Repeter hvordan en løkke kan fortsette så lenge en betingelse er sann, og hvordan den avsluttes kontrollert.
+Syntaksfokus: while-løkke · betingelse · oppdatering av løkkevariabel · stoppvilkår
+
+Lag et lite program som gjentar en meny eller et spørsmål helt til brukeren skriver et bestemt stoppsignal, for eksempel q.
+
+Tell hvor mange gyldige runder brukeren gjennomfører før programmet avsluttes.
+
+Krav og testing:
+- Bruk en while-løkke eller språkets tilsvarende løkke med betingelse.
+- Sørg for at programmet faktisk kan komme ut av løkken.
+- Test både flere runder og avslutning med stoppsignalet.
+
+MIN LØSNING
+--------------------------------------------------------------------
+meny = True
+
+while meny == True:
+    print("""Hei hvor mye penger trenger du?
+    10
+    100
+    1000
+    Exit""")
+    svar = input("Skriv: ")
+    if svar == "10":
+        print("10 Kr sendt til kontoet ditt.")
+    elif svar == "100":
+        print("100 Kr sendt til kontoet ditt.")
+    elif svar == "1000":
+        print("1000 Kr sendt til kontoet ditt.")
+    elif svar == "exit" or svar == "Exit" or svar == "e":
+        meny = False
+    print("""
+    
+
+    
+    """)
+
+TESTING
+--------------------------------------------------------------------
+Jeg testa de ulike alternativene 10 100 og 1000. for å se om de fungerete og fikk tilbake det jeg ville. jeg testa exit, Exit og e for å se om de fungerte også
+
+FORKLARING
+--------------------------------------------------------------------
+Når du bruker input stopper while loop til du skrive noe, derfor printer ikke while loopen foralltid tekst overalt

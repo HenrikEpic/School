@@ -1,0 +1,45 @@
+VG2 IT – PROGRAMMERINGSREPETISJON
+Oppgave 8: Lister, arrays og indekser
+====================================================================
+
+Elev: Henrik
+Klasse: 2ITA
+Eksportert: 27. august 2026 kl. 17:02
+Programmeringsspråk: Python
+
+OPPGAVEN
+--------------------------------------------------------------------
+Mål: Repeter hvordan flere verdier lagres i en ordnet samling, og hvordan enkeltverdier hentes og endres.
+Syntaksfokus: liste / array / sekvens · indeks · legge til · endre · fjerne
+
+Lag en ordnet samling med minst fem navn eller tall. Skriv ut første og siste element, endre ett element og legg til et nytt element.
+
+Fjern også ett element dersom den valgte datastrukturen støtter dette på en naturlig måte. Skriv ut samlingen etter endringene.
+
+Krav og testing:
+- Bruk den vanlige ordnede samlingen i språket ditt, for eksempel list, array eller tilsvarende.
+- Hent minst to elementer ved hjelp av posisjon eller indeks.
+- Forklar hvilken indeks det første elementet har i språket ditt.
+
+MIN LØSNING
+--------------------------------------------------------------------
+Liste = [1,2,3,4,5]
+Tuple = (10,20,30,40,50) #Kan ikke endres
+
+print(Liste[0]) #0 er første indeks
+print(Liste[-1]) #Når man går negativ er det alltid siste
+
+print("Før", Liste)
+Liste.pop(0)
+print("Etter", Liste)
+
+Liste.append(6) #Legger til 6 på slutten av listen
+print(Liste)
+
+TESTING
+--------------------------------------------------------------------
+Jeg har fått tilbake 3 forskjellige lister som har blitt endret eller uendret-
+
+FORKLARING
+--------------------------------------------------------------------
+Når man skal fjerne noe fra lista kan men fjerne etter indeks. Indeks teller fra 0 og videre, der 0 er den første tingen på lista. når du skriver -1 blir det den siste på liste.

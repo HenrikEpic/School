@@ -1,0 +1,57 @@
+VG2 IT – PROGRAMMERINGSREPETISJON
+Oppgave 5: Flere betingelser og logiske operatorer
+====================================================================
+
+Elev: Henrik
+Klasse: 2ITA
+Eksportert: 25. august 2026 kl. 09:27
+Programmeringsspråk: Python
+
+OPPGAVEN
+--------------------------------------------------------------------
+Mål: Repeter flere beslutningsgrener og hvordan AND, OR og NOT eller tilsvarende brukes i betingelser.
+Syntaksfokus: if / else if / elif / else · AND · OR · NOT · sammensatte betingelser
+
+Lag et program som avgjør om en person får tilgang til en aktivitet. Programmet skal lese inn alder og om personen har gyldig medlemskap.
+
+Bestem egne, tydelige regler som gjør at løsningen trenger flere beslutningsgrener og minst to logiske operatorer. Programmet skal skrive hvorfor tilgang gis eller avslås.
+
+Krav og testing:
+- Bruk minst tre mulige utfall i beslutningen.
+- Bruk minst to av AND, OR og NOT eller språkets tilsvarende operatorer.
+- Test minst fire kombinasjoner av alder og medlemskap slik at ulike grener blir kjørt.
+
+MIN LØSNING
+--------------------------------------------------------------------
+"""
+Regler:
+Medlemskap må være sant
+er 18
+
+"""
+
+Alder = int(input("Hvor gammel er du? "))
+Medlemskap = input("Har du medlemskap? ")
+Tilgang = False
+
+if Medlemskap == "Ja" or Medlemskap == "ja":
+    Tilgang = True
+else:
+    Tilgang = False
+
+if Tilgang == False and Alder >= 18:
+    print("Du mangler medlemskap for aktivitet.")
+elif Tilgang == False and Alder < 18:
+    print("Du mangler medlemskap og er ung for aktivitet.")
+elif Tilgang == True and Alder >= 18:
+    print("Du er gyldig for aktivitet!")
+elif Tilgang == True and Alder < 18:
+    print("Du er for ung for aktivitet")
+
+TESTING
+--------------------------------------------------------------------
+Jeg testet de ulike kombinasjoner av alder og medlemskap og fikk de 4 forskjellige resultatene.
+
+FORKLARING
+--------------------------------------------------------------------
+Vis du skal bruke OR må du sammenligne en variabel med tallet, det er ikke mulig å skrive Meldemskap == "Ja" or "ja" for å se om det er 2 ord. men heller Medlemskap == "Ja" or Medlemskap == "ja"

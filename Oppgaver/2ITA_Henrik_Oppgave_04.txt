@@ -1,0 +1,39 @@
+VG2 IT – PROGRAMMERINGSREPETISJON
+Oppgave 4: If og else
+====================================================================
+
+Elev: Henrik
+Klasse: 2ITA
+Eksportert: 25. august 2026 kl. 08:46
+Programmeringsspråk: Python
+
+OPPGAVEN
+--------------------------------------------------------------------
+Mål: Repeter syntaksen for en enkel beslutning med to mulige utfall.
+Syntaksfokus: if · else · sammenligning · kodeblokker / innrykk
+
+Lag et program som leser inn en temperatur. Hvis temperaturen er 0 eller høyere, skal programmet skrive at temperaturen er på eller over frysepunktet. Ellers skal det skrive at temperaturen er under frysepunktet.
+
+Krav og testing:
+- Bruk en tydelig if/else-struktur i språket ditt.
+- Test med en positiv temperatur og en negativ temperatur.
+- Forklar hvordan språket ditt markerer hva som hører til hver gren av beslutningen.
+
+MIN LØSNING
+--------------------------------------------------------------------
+temperatur = float(input("hva er tempraturet? "))
+
+if temperatur == 0:
+    print("på frysepunktet")
+elif temperatur > 0:
+    print("Over frysepunktet")
+elif temperatur < 0:
+    print("under frysepunktet")
+
+TESTING
+--------------------------------------------------------------------
+Skrev inn 2 som test verdi og fikk resultatet over frysepunktet, det samme med 0 og fikk på frysepunktet.
+
+FORKLARING
+--------------------------------------------------------------------
+Når du skal sammenligne tempraturen min du konvertere variablen sin datatype til en som kan ta inn tall, som int eller float.

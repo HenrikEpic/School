@@ -1,0 +1,40 @@
+VG2 IT – PROGRAMMERINGSREPETISJON
+Oppgave 1: Variabler, datatyper og utskrift
+====================================================================
+
+Elev: Henrik
+Klasse: 2ITA
+Eksportert: 19. august 2026 kl. 10:01
+Programmeringsspråk: Python
+
+OPPGAVEN
+--------------------------------------------------------------------
+Mål: Repeter hvordan du oppretter variabler, lagrer ulike typer verdier, endrer en verdi og skriver resultatet ut.
+Syntaksfokus: variabler og tilordning · tekst, heltall, desimaltall og boolsk verdi · utskrift
+
+Lag et lite program som beskriver en elev. Opprett variabler for navn, alder, høyde og om eleven har førerkort eller ikke. Bruk passende datatyper i språket du velger.
+
+Skriv alle verdiene ut i tydelige setninger. Endre deretter verdien i minst én av variablene og skriv ut den nye verdien.
+
+Krav og testing:
+- Bruk minst én tekstverdi, ett heltall, ett desimaltall og én sann/usann-verdi dersom språket ditt støtter dette direkte.
+- Vis både oppretting, tilordning og endring av en variabel.
+- Forklar kort hvordan språket ditt skriver variabler og datatyper.
+
+MIN LØSNING
+--------------------------------------------------------------------
+Navn = "Navn"
+Alder = 0
+Høyde = 5.5
+Førekort = False
+print(Førekort)
+Førekort = True
+print(Navn,Alder,Høyde,Førekort)
+
+TESTING
+--------------------------------------------------------------------
+Jeg lagde variabel og printa dem ut så endret dem og printa ut igjen
+
+FORKLARING
+--------------------------------------------------------------------
+"" lar deg skrive navn og , i print lar deg skrive flere varaibler

@@ -1,0 +1,46 @@
+VG2 IT – PROGRAMMERINGSREPETISJON
+Oppgave 3: Operatorer og beregninger
+====================================================================
+
+Elev: Henrik
+Klasse: 2ITA
+Eksportert: 25. august 2026 kl. 08:29
+Programmeringsspråk: Python
+
+OPPGAVEN
+--------------------------------------------------------------------
+Mål: Repeter de vanligste regneoperatorene, sammenligningsoperatorene og bruk av parenteser i uttrykk.
+Syntaksfokus: +  -  *  / · restoperator (%) · ==  !=  <  >  <=  >= · parenteser og regnerekkefølge
+
+Lag et program med to tall. Vis summen, differansen, produktet, divisjonsresultatet og resten etter heltallsdivisjon der språket ditt støtter dette.
+
+Lag deretter noen sammenligninger mellom tallene og skriv ut resultatet av sammenligningene.
+
+Krav og testing:
+- Bruk minst fire regneoperatorer og minst tre sammenligningsoperatorer.
+- Lag minst ett uttrykk der parenteser påvirker eller tydeliggjør regnerekkefølgen.
+- Test med minst to forskjellige tallpar. Unngå null som det andre tallet i divisjonen i denne oppgaven.
+
+MIN LØSNING
+--------------------------------------------------------------------
+x = 5
+y = 2
+
+#Regneoperator
+print(x + y)
+print(x - y)
+print(x * y)
+print(x / y)
+#Sammenligning
+print(x == y)
+print(x != y)
+print(x > y)
+print(x < y)
+
+TESTING
+--------------------------------------------------------------------
+Testa ulike regneoperator og fikk svar ut ifra tallene i X og Y. og brukte sammenlingninger for å se om de er likt eller ikke eller større.
+
+FORKLARING
+--------------------------------------------------------------------
+Gjøre regnestykker i en print, vis du skal sammenligne må du bråke to = tegn.

@@ -1,0 +1,46 @@
+VG2 IT – PROGRAMMERINGSREPETISJON
+Oppgave 2: Input og typekonvertering
+====================================================================
+
+Elev: Henrik
+Klasse: 2ITA
+Eksportert: 19. august 2026 kl. 10:44
+Programmeringsspråk: Python
+
+OPPGAVEN
+--------------------------------------------------------------------
+Mål: Repeter hvordan programmet leser inn data fra brukeren og gjør tekstinput om til tall som kan brukes videre.
+Syntaksfokus: input / innlesing · konvertering / parsing · variabler · utskrift
+
+Lag et program som spør etter navn, alder og en pris. Brukerens svar skal lagres i variabler.
+
+Gjør alder om til et heltall og pris om til et tall som kan inneholde desimaler. Regn ut hvor gammel brukeren er neste år, og regn ut prisen etter at 25 prosent er lagt til.
+
+Krav og testing:
+- Bruk språkets vanlige syntaks for å lese input.
+- Konverter minst to inputverdier fra tekst til tall.
+- Skriv resultatene ut med forklarende tekst. I denne oppgaven kan du anta at brukeren skriver gyldige tall.
+
+MIN LØSNING
+--------------------------------------------------------------------
+Navn = str(input("Skriv Navnet ditt: "))
+print("Hei ", Navn)
+
+Alder = int(input("Skriv Alder ditt: "))
+print("Din alder er ", Alder)
+
+Pris = float(input("Skriv prisen din: "))
+print("Din pris er ", Pris)
+
+print("Neste år er du ", Alder+1)
+
+print("Din pris etter 25% er ", Pris*1.25)
+
+TESTING
+--------------------------------------------------------------------
+Lagde variabler og ga verdi til variabler med input. Jeg konverterte variablen med int,str og float. 
+Jeg også brukte matte som + og *
+
+FORKLARING
+--------------------------------------------------------------------
+Når du skal skrive desimal tall bruker du punktum ikke komma. Når du skal konverter må da ha parantes rundt inputen
